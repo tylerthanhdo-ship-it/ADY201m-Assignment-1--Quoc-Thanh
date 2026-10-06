@@ -1,0 +1,8 @@
+test,H0,statistic,p_value,effect_size,effect_measure,decision
+One-way ANOVA: CHOLESTEROL vs CARDIO,CHOLESTEROL is not related to the disease,1799.660785669965,0.0,0.04890626996691607,eta squared,reject H0
+"Levene: equal variances of CARDIO, younger vs older",variances are equal,133.98315419526423,5.880069082433678e-31,,,reject H0
+Welch t-test: AGE (split at mean) vs CARDIO,AGE is not related to the disease,-52.51350890203988,0.0,0.19562620230994643,difference in disease rate (older - younger),reject H0
+Pearson (point-biserial): WEIGHT vs CARDIO,WEIGHT is not related to the disease,0.1816595617986254,0.0,0.1816595617986254,correlation r,reject H0
+Chi-square: ALCO vs CARDIO,ALCO is not related to the disease,3.696547466479263,0.05452518218322108,0.007266898991296339,Cramer's V,fail to reject H0
+Chi-square: SMOKE vs CARDIO,SMOKE is not related to the disease,16.677916738748436,4.4293623605077656e-05,0.015435541889117206,Cramer's V,reject H0
+Chi-square: ACTIVE vs CARDIO,ACTIVE is not related to the disease,88.80134396249119,4.3651927285329286e-21,0.0356172799078704,Cramer's V,reject H0

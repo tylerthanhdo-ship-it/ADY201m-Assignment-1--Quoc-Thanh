@@ -1,0 +1,14 @@
+id,title,rows_returned,cardio_cases,cardio_share
+Q01,Total number of records,1,,
+Q02,Number of cardiovascular disease cases,1,,
+Q03,Women and men in the study,2,,
+Q04,10 highest systolic pressures (AP_HI),10,8,0.8
+Q05,10 heaviest patients above the average weight,10,8,0.8
+Q06,10 patients with above-normal glucose (GLUC > 1),10,5,0.5
+Q07,10 oldest patients,10,9,0.9
+Q08,10 patients with CHOLESTEROL = 3,10,9,0.9
+Q09,10 smokers,10,7,0.7
+Q10,10 physically active patients,10,3,0.3
+Q11,10 lowest diastolic pressures (AP_LO),10,5,0.5
+Q12,10 patients who drink alcohol,10,5,0.5
+Q13,Preview with AGE converted from days to years,10,4,0.4

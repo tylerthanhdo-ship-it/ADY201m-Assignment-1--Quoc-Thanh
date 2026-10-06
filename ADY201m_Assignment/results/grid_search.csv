@@ -1,0 +1,9 @@
+params,mean_test_score,std_test_score,rank_test_score,mean_fit_time
+"{'model__learning_rate': 0.05, 'model__max_depth': 4, 'model__n_estimators': 200}",0.7364489585480753,0.0007884132649838749,1,5.174602349599202
+"{'model__learning_rate': 0.05, 'model__max_depth': 4, 'model__n_estimators': 100}",0.7363469218965101,0.0012017108720154348,2,2.650671641031901
+"{'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__n_estimators': 200}",0.7363469081525174,0.0019404697999778476,3,4.043164889017741
+"{'model__learning_rate': 0.1, 'model__max_depth': 4, 'model__n_estimators': 100}",0.7363469006557941,0.0015842345856991098,4,2.6291866302490234
+"{'model__learning_rate': 0.1, 'model__max_depth': 4, 'model__n_estimators': 200}",0.7361428323504793,0.0010066892208132152,5,5.1265162626902265
+"{'model__learning_rate': 0.1, 'model__max_depth': 3, 'model__n_estimators': 200}",0.7360408019461833,0.001345425450252801,6,3.9354848861694336
+"{'model__learning_rate': 0.1, 'model__max_depth': 3, 'model__n_estimators': 100}",0.7358367099012445,0.0017937697633753115,7,1.9870387713114421
+"{'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__n_estimators': 100}",0.7355510072768618,0.0016871978078166717,8,2.1557435989379883

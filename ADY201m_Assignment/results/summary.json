@@ -1,0 +1,54 @@
+{
+  "quality": {
+    "rows": 70000,
+    "columns": 13,
+    "unique_ids": 70000,
+    "missing_values": 0,
+    "duplicate_rows_ignoring_id": 3208,
+    "disease_cases": 34979,
+    "disease_rate": 0.4997,
+    "ap_hi_out_of_range_(<=0_or_>250)": 47,
+    "ap_lo_out_of_range_(<=0_or_>200)": 975,
+    "ap_lo_greater_than_ap_hi": 1234,
+    "height_below_120cm": 52,
+    "weight_below_35kg": 20
+  },
+  "iqr_limits_full_data": {
+    "AP_HI": {
+      "lower": 90.0,
+      "upper": 170.0
+    },
+    "AP_LO": {
+      "lower": 65.0,
+      "upper": 105.0
+    }
+  },
+  "split": {
+    "train": 49000,
+    "test": 21000,
+    "stratified": true,
+    "random_state": 42
+  },
+  "selection_rule": "highest 3-fold CV accuracy on the training set",
+  "selected_model": "GradientBoosting tuned",
+  "best_params": {
+    "model__learning_rate": 0.05,
+    "model__max_depth": 4,
+    "model__n_estimators": 200
+  },
+  "cv_accuracy": 0.7364,
+  "test_metrics": {
+    "test_accuracy": 0.7336,
+    "precision": 0.7525,
+    "recall": 0.6957,
+    "f1": 0.723,
+    "roc_auc": 0.8003
+  },
+  "top_features": [
+    "AP_HI",
+    "CHOLESTEROL",
+    "AGE",
+    "AP_LO",
+    "WEIGHT"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "rows": 70000,
+  "columns": 13,
+  "unique_ids": 70000,
+  "missing_values": 0,
+  "duplicate_rows_ignoring_id": 3208,
+  "disease_cases": 34979,
+  "disease_rate": 0.4997,
+  "ap_hi_out_of_range_(<=0_or_>250)": 47,
+  "ap_lo_out_of_range_(<=0_or_>200)": 975,
+  "ap_lo_greater_than_ap_hi": 1234,
+  "height_below_120cm": 52,
+  "weight_below_35kg": 20
+}

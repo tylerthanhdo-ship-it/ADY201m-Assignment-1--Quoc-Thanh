@@ -1,0 +1,3 @@
+column,lower,upper,capped_below,capped_above
+AP_HI,90.0,170.0,321,1114
+AP_LO,65.0,105.0,2932,1700

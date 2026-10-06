@@ -1,0 +1,24 @@
+{
+  "engine": "Microsoft SQL Server 2022",
+  "driver": "ODBC Driver 18 for SQL Server",
+  "server": {
+    "SERVER_NAME": "DESKTOP-FBVGICD\\SQLEXPRESS",
+    "PRODUCT_VERSION": "15.0.2190.7",
+    "PRODUCT_LEVEL": "RTM",
+    "EDITION": "Express Edition (64-bit)",
+    "DB_NAME": "CardioDB"
+  },
+  "database": "CardioDB",
+  "table": "dbo.CARDIO_TRAIN",
+  "approved_alternative": "SQL Server 2022 + local Jupyter in place of IBM Db2 on Cloud + Watson Studio",
+  "executed": true,
+  "executed_at_utc": "2026-10-06T18:24:04+00:00",
+  "python": "3.13.14",
+  "table_created_this_run": false,
+  "rows": 70000,
+  "disease_cases": 34979,
+  "queries_executed": 13,
+  "export_file": "data\\CARDIO_TRAIN_export.csv",
+  "reopen_verified": true,
+  "dbcc_checktable": "passed"
+}

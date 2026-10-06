@@ -1,0 +1,67 @@
+[
+  {
+    "id": "Q01",
+    "title": "Total number of records",
+    "sql": "SELECT COUNT(*) AS TOTAL_ROWS FROM dbo.CARDIO_TRAIN"
+  },
+  {
+    "id": "Q02",
+    "title": "Number of cardiovascular disease cases",
+    "sql": "SELECT COUNT(*) AS DISEASE_CASES FROM dbo.CARDIO_TRAIN WHERE CARDIO = 1"
+  },
+  {
+    "id": "Q03",
+    "title": "Women and men in the study",
+    "sql": "SELECT GENDER, CASE GENDER WHEN 1 THEN 'Women' ELSE 'Men' END AS LABEL, COUNT(*) AS PEOPLE, AVG(CAST(HEIGHT AS FLOAT)) AS AVG_HEIGHT FROM dbo.CARDIO_TRAIN GROUP BY GENDER ORDER BY GENDER"
+  },
+  {
+    "id": "Q04",
+    "title": "10 highest systolic pressures (AP_HI)",
+    "sql": "SELECT TOP 10 ID, AP_HI, CARDIO FROM dbo.CARDIO_TRAIN ORDER BY AP_HI DESC, ID"
+  },
+  {
+    "id": "Q05",
+    "title": "10 heaviest patients above the average weight",
+    "sql": "SELECT TOP 10 ID, WEIGHT, CARDIO FROM dbo.CARDIO_TRAIN WHERE WEIGHT > (SELECT AVG(WEIGHT) FROM dbo.CARDIO_TRAIN) ORDER BY WEIGHT DESC, ID"
+  },
+  {
+    "id": "Q06",
+    "title": "10 patients with above-normal glucose (GLUC > 1)",
+    "sql": "SELECT TOP 10 ID, GLUC, CARDIO FROM dbo.CARDIO_TRAIN WHERE GLUC > 1 ORDER BY ID"
+  },
+  {
+    "id": "Q07",
+    "title": "10 oldest patients",
+    "sql": "SELECT TOP 10 ID, AGE / 365 AS AGE_YEARS, CARDIO FROM dbo.CARDIO_TRAIN ORDER BY AGE DESC, ID"
+  },
+  {
+    "id": "Q08",
+    "title": "10 patients with CHOLESTEROL = 3",
+    "sql": "SELECT TOP 10 ID, CHOLESTEROL, CARDIO FROM dbo.CARDIO_TRAIN WHERE CHOLESTEROL = 3 ORDER BY ID"
+  },
+  {
+    "id": "Q09",
+    "title": "10 smokers",
+    "sql": "SELECT TOP 10 ID, SMOKE, CARDIO FROM dbo.CARDIO_TRAIN WHERE SMOKE = 1 ORDER BY ID"
+  },
+  {
+    "id": "Q10",
+    "title": "10 physically active patients",
+    "sql": "SELECT TOP 10 ID, ACTIVE, CARDIO FROM dbo.CARDIO_TRAIN WHERE ACTIVE = 1 ORDER BY ID"
+  },
+  {
+    "id": "Q11",
+    "title": "10 lowest diastolic pressures (AP_LO)",
+    "sql": "SELECT TOP 10 ID, AP_LO, CARDIO FROM dbo.CARDIO_TRAIN ORDER BY AP_LO, ID"
+  },
+  {
+    "id": "Q12",
+    "title": "10 patients who drink alcohol",
+    "sql": "SELECT TOP 10 ID, ALCO, CARDIO FROM dbo.CARDIO_TRAIN WHERE ALCO = 1 ORDER BY ID"
+  },
+  {
+    "id": "Q13",
+    "title": "Preview with AGE converted from days to years",
+    "sql": "SELECT TOP 10 ID, AGE AS AGE_DAYS, AGE / 365 AS AGE_YEARS, GENDER, CARDIO FROM dbo.CARDIO_TRAIN ORDER BY ID"
+  }
+]

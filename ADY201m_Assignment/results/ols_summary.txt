@@ -1,0 +1,37 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                 CARDIO   R-squared:                       0.235
+Model:                            OLS   Adj. R-squared:                  0.235
+Method:                 Least Squares   F-statistic:                     1954.
+Date:                Tue, 06 Oct 2026   Prob (F-statistic):               0.00
+Time:                        23:36:56   Log-Likelihood:                -41431.
+No. Observations:               70000   AIC:                         8.289e+04
+Df Residuals:                   69988   BIC:                         8.300e+04
+Df Model:                          11                                         
+Covariance Type:            nonrobust                                         
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+const          -1.6708      0.042    -39.948      0.000      -1.753      -1.589
+AGE             0.0101      0.000     40.131      0.000       0.010       0.011
+HEIGHT         -0.0008      0.000     -3.229      0.001      -0.001      -0.000
+WEIGHT          0.0021      0.000     16.542      0.000       0.002       0.002
+AP_HI           0.0096      0.000     64.319      0.000       0.009       0.010
+AP_LO           0.0040      0.000     14.993      0.000       0.003       0.005
+GENDER         -0.0041      0.004     -0.979      0.328      -0.012       0.004
+CHOLESTEROL     0.0941      0.003     33.686      0.000       0.089       0.100
+GLUC           -0.0207      0.003     -6.381      0.000      -0.027      -0.014
+SMOKE          -0.0257      0.007     -3.953      0.000      -0.039      -0.013
+ALCO           -0.0379      0.008     -4.840      0.000      -0.053      -0.023
+ACTIVE         -0.0437      0.004    -10.487      0.000      -0.052      -0.036
+==============================================================================
+Omnibus:                    26450.215   Durbin-Watson:                   1.981
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             3466.466
+Skew:                           0.049   Prob(JB):                         0.00
+Kurtosis:                       1.914   Cond. No.                     6.11e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 6.11e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
