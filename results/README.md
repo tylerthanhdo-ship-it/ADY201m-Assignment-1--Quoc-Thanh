@@ -17,5 +17,5 @@ Written by notebook 02 (analysis) unless noted.
 | `cardio_classifier.joblib` | Fitted pipeline (IQR capping → scaling → model). Load with `cardio_utils.py` importable and the versions in `environment_versions.csv`. |
 | `environment_versions.csv` | Python and library versions used |
 | `summary.json` | One-file summary of data quality, split, selection and test metrics |
-| `db_execution_status.json` | **Notebook 01.** SQL Server connection, row counts and persistence check (placeholder until you run notebook 01) |
-| `query_summary.csv` | **Notebook 01.** Rows returned and disease cases for Q01–Q13 (created when notebook 01 runs) |
+| `db_execution_status.json` | **Notebook 01.** SQL Server connection, row counts and persistence check |
+| `query_summary.csv` | **Notebook 01.** Rows returned and disease cases for Q01–Q13 |

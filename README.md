@@ -4,12 +4,12 @@ Coursework for ADY201m: 70,000 patient records stored in a SQL database, queried
 
 ## Scope and execution status
 
-**Approved alternative:** Microsoft SQL Server 2022 (managed with SSMS), the `pyodbc` API and local Jupyter replace IBM Db2 on Cloud, `ibm_db` and Watson Studio.
+**Approved alternative:** Microsoft SQL Server 2019 (managed with SSMS), the `pyodbc` API and local Jupyter replace IBM Db2 on Cloud, `ibm_db` and Watson Studio.
 
 | Part | Status |
 |---|---|
 | Notebook 02 — EDA, statistics, models | Executed locally; all outputs, figures and result files are included. |
-| Notebook 01 — | Notebook 01 — SQL Server storage and queries | Executed on SQL Server 2022 (.\SQLEXPRESS); outputs saved in the notebook and results/. |
+| Notebook 01 — SQL Server storage and queries | Executed on SQL Server 2019 Express (`.\SQLEXPRESS`); outputs saved in the notebook, `results/db_execution_status.json` and `results/query_summary.csv`. |
 
 ## Data
 
@@ -46,8 +46,7 @@ Notebook 02 reads the **raw** file rather than the cleaned one, so age is never 
 ├── data/                           Raw, cleaned and exported CSV files
 ├── sql/                            DDL, SSMS load script, Q01–Q13 (T-SQL), queries.json
 ├── figures/                        Nine figures from notebook 02
-├── results/                        Statistics, model comparison, predictions, saved model
-└── MANIFEST.json                   Size and SHA-256 of every file
+└── results/                        Statistics, model comparison, predictions, saved model
 ```
 
 `ADY201m_Report.html` and `02_Cardio_Analysis_ML.html` open directly in a browser; the `.ipynb` files render on GitHub.
@@ -105,17 +104,17 @@ Q07 differs from the brief's example (7/10) because it orders by exact age in da
 |---|---|---|
 | Understand and check the dataset | Notebook 02 §1; `results/data_quality.json` | Done |
 | Create table, load data, run SQL | `sql/01_create_table.sql`, `sql/02_load_data_ssms.sql`, `sql/03_queries.sql` | Done (SQL Server, approved alternative) |
-| Connect from Python and run the 10 queries | Notebook 01 (`pyodbc`) | Code complete — run once on your server |
-| Export CSV and close the connection | Notebook 01 §4 | Code complete — run once on your server |
+| Connect from Python and run the 10 queries | Notebook 01 (`pyodbc`) | Executed |
+| Export CSV and close the connection | Notebook 01 §4 | Executed |
 | EDA, IQR cleaning, tests, OLS | Notebook 02 §2–4 | Executed |
 | Train and compare models | Notebook 02 §5; `results/model_comparison.csv` | Executed |
 | Fine-tune a model | Notebook 02 §5; `results/grid_search.csv` | Executed |
 | Notebook environment (instead of Watson Studio) | Local Jupyter | Executed |
-| Upload to GitHub | This repository | Push after running notebook 01 |
+| Upload to GitHub | This repository | Done |
 
 ## Reproduce locally
 
-Requirements: Python 3.11+, SQL Server 2022 (Developer or Express) with SSMS, and [Microsoft ODBC Driver 18 for SQL Server](https://learn.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server).
+Requirements: Python 3.11+, SQL Server 2019 or later (Developer or Express) with SSMS, and [Microsoft ODBC Driver 18 for SQL Server](https://learn.microsoft.com/sql/connect/odbc/download-odbc-driver-for-sql-server).
 
 ```bash
 python -m pip install -r requirements.txt

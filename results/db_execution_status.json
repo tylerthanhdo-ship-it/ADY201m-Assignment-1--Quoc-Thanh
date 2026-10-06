@@ -1,5 +1,5 @@
 {
-  "engine": "Microsoft SQL Server 2022",
+  "engine": "Microsoft SQL Server 2019",
   "driver": "ODBC Driver 18 for SQL Server",
   "server": {
     "SERVER_NAME": "DESKTOP-FBVGICD\\SQLEXPRESS",
@@ -10,7 +10,7 @@
   },
   "database": "CardioDB",
   "table": "dbo.CARDIO_TRAIN",
-  "approved_alternative": "SQL Server 2022 + local Jupyter in place of IBM Db2 on Cloud + Watson Studio",
+  "approved_alternative": "SQL Server 2019 + local Jupyter in place of IBM Db2 on Cloud + Watson Studio",
   "executed": true,
   "executed_at_utc": "2026-10-06T18:24:04+00:00",
   "python": "3.13.14",

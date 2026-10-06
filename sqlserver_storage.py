@@ -1,4 +1,4 @@
-"""Create, load and verify the CARDIO_TRAIN table on Microsoft SQL Server 2022."""
+"""Create, load and verify the CARDIO_TRAIN table on Microsoft SQL Server 2019."""
 import os
 from pathlib import Path
 

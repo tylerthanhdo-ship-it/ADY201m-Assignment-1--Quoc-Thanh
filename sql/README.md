@@ -1,4 +1,4 @@
-# SQL scripts (SQL Server 2022)
+# SQL scripts (SQL Server 2019)
 
 | File | Purpose |
 |---|---|

@@ -1,4 +1,4 @@
--- ADY201m: T-SQL queries for SQL Server 2022 (run in SSMS against CardioDB)
+-- ADY201m: T-SQL queries for SQL Server 2019 (run in SSMS against CardioDB)
 -- Q01-Q10 cover the ten API tasks in the brief; Q11-Q13 reproduce the extra console queries.
 -- AGE is stored in days; queries convert it with integer division instead of UPDATE so the table stays identical to the source.
 USE CardioDB;
